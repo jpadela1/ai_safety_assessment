@@ -1,0 +1,145 @@
+# Pre-Training Safety Risk Assessment
+
+An automated, modality-aware instrument that scores a dataset's **safety risk before it trains a model**, with a working Python library (`safety_rubric`) and a controlled-injection validation across two modalities (text and clinical tabular).
+
+> Companion code for the paper *"AI Pre-Training Safety Risk Assessment: An Automated, Modality-Aware Rubric for Scoring Dataset Safety Risk."*
+> **Authors:** J. Padela and J. Wang (UMBC) — *edit to final author list/affiliation.*
+
+---
+
+## What this is
+
+AI risk frameworks (NIST AI RMF, OMB M-25-21, EU AI Act) assess safety at the level of the *deployed system* — after the determinants of risk are already baked into the training data. This project provides the missing instrument: an automated proxy-based rubric that produces a safety score `S(D)` at the data layer, **before** training, and a study showing that score predicts the downstream model's harmful behavior.
+
+**Validation (controlled injection):**
+
+| Modality | Calibration (proxy vs. injected dose) | Predictive validity (proxy vs. downstream harm) |
+|---|---|---|
+| **Text** (CivilComments, Pythia-410M) | r = 0.9996 | generated toxicity r = +0.924, 95% CI [0.843, 0.968] |
+| **Tabular** (Diabetes 130, label noise) | r = 0.980 | AUC r = −0.868; ECE r = +0.976 |
+
+Predictive validity strengthens with model scale (Pythia-160M r = 0.20, CI crosses 0 → 410M r = 0.924, CI excludes 0). The automated proxy nearly matches an oracle with access to the true injected dose, at zero labeling cost (text R² 0.854 vs. 0.855).
+
+---
+
+## Install
+
+```bash
+git clone <this-repo-url>
+cd pretraining-safety-assessment
+pip install -e .                 # installs the safety_rubric library (core deps)
+pip install -r requirements.txt  # adds experiment deps (torch, detoxify, transformers, …)
+```
+
+The library core (tabular path) needs only numpy/pandas/scikit-learn. Heavy dependencies (Detoxify, torch, transformers) are lazy-imported and only required for the text proxy and the text experiment.
+
+## Quickstart (the library)
+
+```python
+import pandas as pd
+from safety_rubric import assess_safety, SafetyConfig
+
+df = pd.read_csv("my_dataset.csv")
+metadata = {"source_count": 3, "ugc_fraction": 0.2, "data_collection_end": "2023-01-01"}
+
+# text dataset
+result, proxies = assess_safety(df, metadata, SafetyConfig(text_column="comment_text"))
+
+# tabular dataset (label-integrity proxy)
+result, proxies = assess_safety(df, metadata, SafetyConfig(label_column="label"))
+
+print(result.safety)                    # S(D) in [0,1]; higher = higher risk; None if no sub-dim applies
+print(result.passes_threshold(s_max=0.2))
+for name, score, applicable in result.breakdown:
+    print(name, score, applicable)
+```
+
+Only `harm_content_density` (text) and `label_integrity` (tabular) are empirically validated; the other proxies are runnable but documentation-driven heuristics (see the paper).
+
+---
+
+## Reproducing the results
+
+**Tabular arm (CPU, ~minutes, no GPU):**
+```bash
+pip install ucimlrepo scikit-learn xgboost pandas numpy
+python experiments/tabular_arm/diabetes_label_noise_arm.py
+# writes results/rubric_scores/diabetes_outcome.csv + prints the analysis
+```
+
+**Text arm (GPU, run on Colab):** the two notebooks in `experiments/text_arm/` do (1) proxy calibration — Detoxify over the injected dose mixes — and (2) fine-tuning Pythia-160M/410M and scoring generated toxicity on RealToxicityPrompts. Use a T4/L4 runtime; restart the runtime after any CUDA device-side assert. Outputs land in `results/`.
+
+**Figures:** regenerate Figs. 2–4 from the result CSVs:
+```bash
+python scripts/make_figures.py     # writes figures/fig2…fig4
+```
+
+**Tests:**
+```bash
+pytest tests/
+```
+
+---
+
+## Repository structure
+
+```
+.
+├── README.md
+├── LICENSE
+├── pyproject.toml                     # packaging; installs `safety_rubric`
+├── requirements.txt                   # experiment dependencies
+├── src/
+│   └── safety_rubric/
+│       └── __init__.py                # the library: proxies + composite + assess_safety()
+├── experiments/
+│   ├── text_arm/
+│   │   ├── civilcomments_loader.py
+│   │   ├── run_scoring_colab.ipynb     # proxy calibration (Detoxify on dose mixes)
+│   │   └── run_outcome_metric_colab.ipynb  # fine-tune Pythia + RealToxicityPrompts generation
+│   └── tabular_arm/
+│       └── diabetes_label_noise_arm.py # full tabular dose-response (CPU)
+├── results/
+│   ├── civilcomments_doseresponse.csv  # proxy/calibration (160M + 410M share this)
+│   ├── civilcomments_outcome_410m.csv  # 410M generated toxicity
+│   ├── civilcomments_outcome_160m.csv  # 160M generated toxicity
+│   └── diabetes_outcome.csv            # tabular proxy + AUC/ECE
+├── figures/
+│   ├── fig1_framework_flow.pdf/.svg    # framework diagram (hand-built)
+│   ├── fig2_text_calibration.png       # regenerated by make_figures.py
+│   ├── fig3_text_410m.png/.pdf
+│   └── fig4_tabular_dose.png
+├── scripts/
+│   └── make_figures.py                 # regenerate Figs 2–4 from results/
+├── tests/
+│   └── test_safety_rubric.py
+└── paper/
+    ├── main.tex                        # add your LaTeX source
+    └── references.bib
+```
+
+---
+
+## Data
+
+All datasets are public: CivilComments (text toxicity), Diabetes 130-US Hospitals (clinical tabular; fetched via `ucimlrepo`). No raw protected data is redistributed here — the experiment scripts download the public sources. `results/` contains only the aggregated (dose × seed) measurements used for the figures and tables.
+
+## Citation
+
+```bibtex
+@inproceedings{padela2026safety,
+  title     = {AI Pre-Training Safety Risk Assessment: An Automated, Modality-Aware
+               Rubric for Scoring Dataset Safety Risk},
+  author    = {Padela, J. and Wang, J.},
+  booktitle = {TBD},
+  year      = {2026}
+}
+```
+
+## Acknowledgment
+
+The authors used the AI tool Claude (claude.ai) for code generation, debugging, benchmarking scripts, and formatting; all technical content and conclusions are the authors' responsibility.
+
+## License
+
+See `LICENSE` (MIT recommended for code release).

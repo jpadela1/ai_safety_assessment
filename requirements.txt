@@ -1,0 +1,16 @@
+# --- library core (tabular path runs on these alone) ---
+numpy
+pandas
+scikit-learn
+xgboost
+matplotlib
+ucimlrepo            # fetches Diabetes 130
+
+# --- text arm extras (heavy; needed for harm-content proxy + text experiment) ---
+detoxify             # toxicity classifier (text harm-content proxy + outcome scoring)
+torch                # Pythia fine-tuning
+transformers
+datasets             # CivilComments loader
+
+# --- dev ---
+pytest

@@ -1,0 +1,24 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="causal-learn" />
+          <option value="dowhy" />
+          <option value="econml" />
+          <option value="networkx" />
+          <option value="matplotlib" />
+          <option value="numpy" />
+          <option value="pandas" />
+          <option value="scipy" />
+          <option value="scikit-learn" />
+          <option value="seaborn" />
+          <option value="joblib" />
+          <option value="tqdm" />
+          <option value="ipykernel" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

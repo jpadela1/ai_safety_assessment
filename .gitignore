@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.DS_Store
+# large/raw caches — keep aggregated results/ but ignore downloaded raw data
+data/raw/
+*.ckpt
+*.pt
