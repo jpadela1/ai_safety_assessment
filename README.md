@@ -126,14 +126,7 @@ All datasets are public: CivilComments (text toxicity), Diabetes 130-US Hospital
 ## Citation
 
 ```bibtex
-@inproceedings{padela2026safety,
-  title     = {AI Pre-Training Safety Risk Assessment: An Automated, Modality-Aware
-               Rubric for Scoring Dataset Safety Risk},
-  author    = {Padela, J. and Wang, J.},
-  booktitle = {TBD},
-  year      = {2026}
-}
-```
+
 
 ## Acknowledgment
 
