@@ -3,7 +3,8 @@ CivilComments loader, sliced by toxicity-label proportion.
 
 Pulls CivilComments from HuggingFace `datasets` (or local cache). The
 slicing strategy intentionally varies harm-content density — the focal
-sub-dimension for the H3 mechanism in Section IV-C.
+sub-dimension for the H3 mechanism in Section IV-C. Signing in to HuggingFace
+to get a token may be required.
 
 Requires:  pip install datasets
 
