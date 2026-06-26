@@ -3,7 +3,6 @@
 An automated, modality-aware instrument that scores a dataset's **safety risk before it trains a model**, with a working Python library (`safety_rubric`) and a controlled-injection validation across two modalities (text and clinical tabular).
 
 > Companion code for the paper *"AI Pre-Training Safety Risk Assessment: An Automated, Modality-Aware Rubric for Scoring Dataset Safety Risk."*
-> **Authors:** J. Padela and J. Wang (UMBC) — *edit to final author list/affiliation.*
 
 ---
 
