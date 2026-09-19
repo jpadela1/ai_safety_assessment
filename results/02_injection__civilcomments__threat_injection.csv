@@ -1,0 +1,176 @@
+dataset,modality,context,risk_level,injector,targets_subdimension,is_target,dose,realized_dose,seed,dimension,subdimension,pretraining_score,n_records,n_flagged,threshold,exceeds_threshold,detector,units
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,0,content_safety,harm_content_density,0.0085,10000,85,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,0,content_safety,identity_attack_density,0.0,10000,0,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,0,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,0,physical_safety,physical_harm_enablement,0.0007,10000,7,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.0,0.0,0,physical_safety,threat_density,0.0001,10000,1,0.02,False,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,0,content_safety,harm_content_density,0.0336,10000,336,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,0,content_safety,identity_attack_density,0.0014,10000,14,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,0,content_safety,severe_toxicity_density,0.0001,10000,1,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,0,physical_safety,physical_harm_enablement,0.0007,10000,7,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.03,0.03,0,physical_safety,threat_density,0.0169,10000,169,0.02,False,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,0,content_safety,harm_content_density,0.0501,10000,501,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,0,content_safety,identity_attack_density,0.0024,10000,24,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,0,content_safety,severe_toxicity_density,0.0001,10000,1,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,0,physical_safety,physical_harm_enablement,0.0008,10000,8,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.05,0.05,0,physical_safety,threat_density,0.0284,10000,284,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,0,content_safety,harm_content_density,0.0913,10000,913,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,0,content_safety,identity_attack_density,0.0051,10000,51,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,0,content_safety,severe_toxicity_density,0.0001,10000,1,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,0,physical_safety,physical_harm_enablement,0.0008,10000,8,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.1,0.1,0,physical_safety,threat_density,0.0567,10000,567,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,0,content_safety,harm_content_density,0.1706,10000,1706,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,0,content_safety,identity_attack_density,0.0088,10000,88,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,0,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,0,physical_safety,physical_harm_enablement,0.0008,10000,8,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.2,0.2,0,physical_safety,threat_density,0.1107,10000,1107,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,0,content_safety,harm_content_density,0.2535,10000,2535,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,0,content_safety,identity_attack_density,0.0134,10000,134,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,0,content_safety,severe_toxicity_density,0.0001,10000,1,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,0,physical_safety,physical_harm_enablement,0.0009,10000,9,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.3,0.3,0,physical_safety,threat_density,0.163,10000,1630,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,0,content_safety,harm_content_density,0.3347,10000,3347,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,0,content_safety,identity_attack_density,0.0186,10000,186,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,0,content_safety,severe_toxicity_density,0.0002,10000,2,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,0,physical_safety,physical_harm_enablement,0.0008,10000,8,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.4,0.4,0,physical_safety,threat_density,0.2187,10000,2187,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,1,content_safety,harm_content_density,0.0074,10000,74,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,1,content_safety,identity_attack_density,0.0,10000,0,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,1,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,1,physical_safety,physical_harm_enablement,0.001,10000,10,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.0,0.0,1,physical_safety,threat_density,0.0,10000,0,0.02,False,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,1,content_safety,harm_content_density,0.0315,10000,315,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,1,content_safety,identity_attack_density,0.0022,10000,22,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,1,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,1,physical_safety,physical_harm_enablement,0.001,10000,10,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.03,0.03,1,physical_safety,threat_density,0.0151,10000,151,0.02,False,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,1,content_safety,harm_content_density,0.0484,10000,484,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,1,content_safety,identity_attack_density,0.0028,10000,28,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,1,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,1,physical_safety,physical_harm_enablement,0.001,10000,10,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.05,0.05,1,physical_safety,threat_density,0.0265,10000,265,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,1,content_safety,harm_content_density,0.0903,10000,903,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,1,content_safety,identity_attack_density,0.0051,10000,51,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,1,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,1,physical_safety,physical_harm_enablement,0.0011,10000,11,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.1,0.1,1,physical_safety,threat_density,0.0539,10000,539,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,1,content_safety,harm_content_density,0.1733,10000,1733,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,1,content_safety,identity_attack_density,0.0096,10000,96,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,1,content_safety,severe_toxicity_density,0.0002,10000,2,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,1,physical_safety,physical_harm_enablement,0.0009,10000,9,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.2,0.2,1,physical_safety,threat_density,0.1117,10000,1117,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,1,content_safety,harm_content_density,0.2533,10000,2533,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,1,content_safety,identity_attack_density,0.0146,10000,146,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,1,content_safety,severe_toxicity_density,0.0003,10000,3,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,1,physical_safety,physical_harm_enablement,0.0008,10000,8,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.3,0.3,1,physical_safety,threat_density,0.1646,10000,1646,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,1,content_safety,harm_content_density,0.3338,10000,3338,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,1,content_safety,identity_attack_density,0.019,10000,190,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,1,content_safety,severe_toxicity_density,0.0003,10000,3,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,1,physical_safety,physical_harm_enablement,0.001,10000,10,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.4,0.4,1,physical_safety,threat_density,0.2204,10000,2204,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,2,content_safety,harm_content_density,0.0057,10000,57,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,2,content_safety,identity_attack_density,0.0001,10000,1,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,2,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,2,physical_safety,physical_harm_enablement,0.0012,10000,12,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.0,0.0,2,physical_safety,threat_density,0.0,10000,0,0.02,False,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,2,content_safety,harm_content_density,0.0303,10000,303,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,2,content_safety,identity_attack_density,0.0011,10000,11,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,2,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,2,physical_safety,physical_harm_enablement,0.0013,10000,13,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.03,0.03,2,physical_safety,threat_density,0.0176,10000,176,0.02,False,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,2,content_safety,harm_content_density,0.0469,10000,469,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,2,content_safety,identity_attack_density,0.0019,10000,19,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,2,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,2,physical_safety,physical_harm_enablement,0.0013,10000,13,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.05,0.05,2,physical_safety,threat_density,0.0275,10000,275,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,2,content_safety,harm_content_density,0.0884,10000,884,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,2,content_safety,identity_attack_density,0.0045,10000,45,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,2,content_safety,severe_toxicity_density,0.0001,10000,1,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,2,physical_safety,physical_harm_enablement,0.0013,10000,13,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.1,0.1,2,physical_safety,threat_density,0.0548,10000,548,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,2,content_safety,harm_content_density,0.1683,10000,1683,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,2,content_safety,identity_attack_density,0.0098,10000,98,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,2,content_safety,severe_toxicity_density,0.0001,10000,1,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,2,physical_safety,physical_harm_enablement,0.0012,10000,12,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.2,0.2,2,physical_safety,threat_density,0.1076,10000,1076,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,2,content_safety,harm_content_density,0.2492,10000,2492,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,2,content_safety,identity_attack_density,0.0138,10000,138,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,2,content_safety,severe_toxicity_density,0.0003,10000,3,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,2,physical_safety,physical_harm_enablement,0.0009,10000,9,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.3,0.3,2,physical_safety,threat_density,0.1636,10000,1636,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,2,content_safety,harm_content_density,0.3318,10000,3318,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,2,content_safety,identity_attack_density,0.0187,10000,187,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,2,content_safety,severe_toxicity_density,0.0003,10000,3,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,2,physical_safety,physical_harm_enablement,0.0008,10000,8,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.4,0.4,2,physical_safety,threat_density,0.219,10000,2190,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,3,content_safety,harm_content_density,0.0068,10000,68,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,3,content_safety,identity_attack_density,0.0001,10000,1,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,3,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,3,physical_safety,physical_harm_enablement,0.0012,10000,12,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.0,0.0,3,physical_safety,threat_density,0.0,10000,0,0.02,False,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,3,content_safety,harm_content_density,0.0319,10000,319,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,3,content_safety,identity_attack_density,0.0022,10000,22,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,3,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,3,physical_safety,physical_harm_enablement,0.0012,10000,12,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.03,0.03,3,physical_safety,threat_density,0.0173,10000,173,0.02,False,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,3,content_safety,harm_content_density,0.0489,10000,489,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,3,content_safety,identity_attack_density,0.0028,10000,28,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,3,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,3,physical_safety,physical_harm_enablement,0.0013,10000,13,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.05,0.05,3,physical_safety,threat_density,0.0294,10000,294,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,3,content_safety,harm_content_density,0.0894,10000,894,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,3,content_safety,identity_attack_density,0.005,10000,50,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,3,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,3,physical_safety,physical_harm_enablement,0.0012,10000,12,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.1,0.1,3,physical_safety,threat_density,0.0553,10000,553,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,3,content_safety,harm_content_density,0.1711,10000,1711,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,3,content_safety,identity_attack_density,0.0094,10000,94,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,3,content_safety,severe_toxicity_density,0.0002,10000,2,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,3,physical_safety,physical_harm_enablement,0.0012,10000,12,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.2,0.2,3,physical_safety,threat_density,0.1102,10000,1102,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,3,content_safety,harm_content_density,0.2525,10000,2525,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,3,content_safety,identity_attack_density,0.014,10000,140,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,3,content_safety,severe_toxicity_density,0.0001,10000,1,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,3,physical_safety,physical_harm_enablement,0.0013,10000,13,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.3,0.3,3,physical_safety,threat_density,0.1649,10000,1649,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,3,content_safety,harm_content_density,0.3332,10000,3332,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,3,content_safety,identity_attack_density,0.0186,10000,186,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,3,content_safety,severe_toxicity_density,0.0003,10000,3,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,3,physical_safety,physical_harm_enablement,0.0012,10000,12,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.4,0.4,3,physical_safety,threat_density,0.2198,10000,2198,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,4,content_safety,harm_content_density,0.0068,10000,68,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,4,content_safety,identity_attack_density,0.0001,10000,1,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,4,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.0,0.0,4,physical_safety,physical_harm_enablement,0.0011,10000,11,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.0,0.0,4,physical_safety,threat_density,0.0001,10000,1,0.02,False,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,4,content_safety,harm_content_density,0.0317,10000,317,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,4,content_safety,identity_attack_density,0.0021,10000,21,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,4,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.03,0.03,4,physical_safety,physical_harm_enablement,0.0011,10000,11,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.03,0.03,4,physical_safety,threat_density,0.0173,10000,173,0.02,False,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,4,content_safety,harm_content_density,0.0485,10000,485,0.05,False,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,4,content_safety,identity_attack_density,0.0029,10000,29,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,4,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.05,0.05,4,physical_safety,physical_harm_enablement,0.0011,10000,11,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.05,0.05,4,physical_safety,threat_density,0.0299,10000,299,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,4,content_safety,harm_content_density,0.0888,10000,888,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,4,content_safety,identity_attack_density,0.005,10000,50,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,4,content_safety,severe_toxicity_density,0.0,10000,0,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.1,0.1,4,physical_safety,physical_harm_enablement,0.0012,10000,12,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.1,0.1,4,physical_safety,threat_density,0.0585,10000,585,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,4,content_safety,harm_content_density,0.1706,10000,1706,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,4,content_safety,identity_attack_density,0.0096,10000,96,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,4,content_safety,severe_toxicity_density,0.0002,10000,2,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.2,0.2,4,physical_safety,physical_harm_enablement,0.001,10000,10,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.2,0.2,4,physical_safety,threat_density,0.1106,10000,1106,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,4,content_safety,harm_content_density,0.2505,10000,2505,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,4,content_safety,identity_attack_density,0.0143,10000,143,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,4,content_safety,severe_toxicity_density,0.0002,10000,2,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.3,0.3,4,physical_safety,physical_harm_enablement,0.001,10000,10,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.3,0.3,4,physical_safety,threat_density,0.1635,10000,1635,0.02,True,Detoxify (threat head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,4,content_safety,harm_content_density,0.3337,10000,3337,0.05,True,Detoxify (toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,4,content_safety,identity_attack_density,0.0189,10000,189,0.02,False,Detoxify (identity_attack head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,4,content_safety,severe_toxicity_density,0.0003,10000,3,0.005,False,Detoxify (severe_toxicity head),fraction
+civilcomments,text,general,medium,threat_injection,threat_density,False,0.4,0.4,4,physical_safety,physical_harm_enablement,0.0009,10000,9,0.02,False,rule-based hazard lexicon x actionability,fraction
+civilcomments,text,general,medium,threat_injection,threat_density,True,0.4,0.4,4,physical_safety,threat_density,0.2198,10000,2198,0.02,True,Detoxify (threat head),fraction

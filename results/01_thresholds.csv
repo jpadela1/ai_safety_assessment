@@ -1,0 +1,12 @@
+subdimension,high,medium,low
+harm_content_density,0.01,0.05,0.1
+identity_attack_density,0.005,0.02,0.05
+severe_toxicity_density,0.001,0.005,0.02
+label_integrity,0.05,0.1,0.2
+free_text_field_harm,0.01,0.05,0.1
+representation_imbalance,0.1,0.2,0.35
+physical_harm_enablement,0.005,0.02,0.05
+threat_density,0.005,0.02,0.05
+measurement_range_violation,0.01,0.05,0.1
+safety_critical_edge_case_coverage,0.1,0.25,0.4
+outcome_severity_exposure,0.1,0.25,0.5

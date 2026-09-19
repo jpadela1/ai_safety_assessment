@@ -1,0 +1,45 @@
+dataset,context,risk_level,dimension,subdimension,score,threshold,verdict,na_reason,units
+diabetes_130,health,high,content_safety,harm_content_density,,0.01,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+diabetes_130,health,high,content_safety,identity_attack_density,,0.005,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+diabetes_130,health,high,content_safety,severe_toxicity_density,,0.001,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+diabetes_130,health,high,content_safety,label_integrity,0.19136244973496092,0.05,EXCEEDS,,fraction
+diabetes_130,health,high,content_safety,free_text_field_harm,,0.01,N/A,required input 'text_column' not set on the dataset spec,fraction
+diabetes_130,health,high,content_safety,representation_imbalance,0.6508362321404007,0.1,EXCEEDS,,fraction
+diabetes_130,health,high,physical_safety,physical_harm_enablement,,0.005,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+diabetes_130,health,high,physical_safety,threat_density,,0.005,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+diabetes_130,health,high,physical_safety,measurement_range_violation,0.0,0.01,within,,fraction
+diabetes_130,health,high,physical_safety,safety_critical_edge_case_coverage,0.1652,0.1,EXCEEDS,,fraction
+diabetes_130,health,high,physical_safety,outcome_severity_exposure,0.11159915885462728,0.1,EXCEEDS,,fraction
+framingham,health,high,content_safety,harm_content_density,,0.01,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+framingham,health,high,content_safety,identity_attack_density,,0.005,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+framingham,health,high,content_safety,severe_toxicity_density,,0.001,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+framingham,health,high,content_safety,label_integrity,0.23208454037300733,0.05,EXCEEDS,,fraction
+framingham,health,high,content_safety,free_text_field_harm,,0.01,N/A,required input 'text_column' not set on the dataset spec,fraction
+framingham,health,high,content_safety,representation_imbalance,0.2166583912611718,0.1,EXCEEDS,,fraction
+framingham,health,high,physical_safety,physical_harm_enablement,,0.005,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+framingham,health,high,physical_safety,threat_density,,0.005,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+framingham,health,high,physical_safety,measurement_range_violation,0.10330188679245284,0.01,EXCEEDS,,fraction
+framingham,health,high,physical_safety,safety_critical_edge_case_coverage,0.19166666666666668,0.1,EXCEEDS,,fraction
+framingham,health,high,physical_safety,outcome_severity_exposure,0.15188679245283018,0.1,EXCEEDS,,fraction
+german_credit,loan_finance,medium,content_safety,harm_content_density,,0.05,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+german_credit,loan_finance,medium,content_safety,identity_attack_density,,0.02,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+german_credit,loan_finance,medium,content_safety,severe_toxicity_density,,0.005,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+german_credit,loan_finance,medium,content_safety,label_integrity,0.31055007055980116,0.1,EXCEEDS,,fraction
+german_credit,loan_finance,medium,content_safety,free_text_field_harm,,0.05,N/A,required input 'text_column' not set on the dataset spec,fraction
+german_credit,loan_finance,medium,content_safety,representation_imbalance,0.277,0.2,EXCEEDS,,fraction
+german_credit,loan_finance,medium,physical_safety,physical_harm_enablement,,0.02,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+german_credit,loan_finance,medium,physical_safety,threat_density,,0.02,N/A,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec,fraction
+german_credit,loan_finance,medium,physical_safety,measurement_range_violation,,0.05,N/A,"context 'loan_finance' not in ['biology', 'chemistry', 'health', 'transportation']; required input 'value_ranges' not set on the dataset spec",fraction
+german_credit,loan_finance,medium,physical_safety,safety_critical_edge_case_coverage,0.0625,0.25,within,,fraction
+german_credit,loan_finance,medium,physical_safety,outcome_severity_exposure,,0.25,N/A,"context 'loan_finance' not in ['health', 'transportation']",fraction
+civilcomments,general,medium,content_safety,harm_content_density,0.0073,0.05,within,,fraction
+civilcomments,general,medium,content_safety,identity_attack_density,0.0001,0.02,within,,fraction
+civilcomments,general,medium,content_safety,severe_toxicity_density,0.0,0.005,within,,fraction
+civilcomments,general,medium,content_safety,label_integrity,,0.1,N/A,modality 'text' not in ['tabular']; required input 'label_column' not set on the dataset spec,fraction
+civilcomments,general,medium,content_safety,free_text_field_harm,,0.05,N/A,modality 'text' not in ['tabular'],fraction
+civilcomments,general,medium,content_safety,representation_imbalance,,0.2,N/A,modality 'text' not in ['tabular']; required input 'sensitive_columns' not set on the dataset spec,fraction
+civilcomments,general,medium,physical_safety,physical_harm_enablement,0.001,0.02,within,,fraction
+civilcomments,general,medium,physical_safety,threat_density,0.0,0.02,within,,fraction
+civilcomments,general,medium,physical_safety,measurement_range_violation,,0.05,N/A,"modality 'text' not in ['tabular']; context 'general' not in ['biology', 'chemistry', 'health', 'transportation']; required input 'value_ranges' not set on the dataset spec",fraction
+civilcomments,general,medium,physical_safety,safety_critical_edge_case_coverage,,0.25,N/A,"modality 'text' not in ['tabular']; context 'general' not in ['health', 'loan_finance', 'transportation']; required input 'edge_case_strata' not set on the dataset spec",fraction
+civilcomments,general,medium,physical_safety,outcome_severity_exposure,,0.25,N/A,"modality 'text' not in ['tabular']; context 'general' not in ['health', 'transportation']; required input 'label_column' not set on the dataset spec",fraction

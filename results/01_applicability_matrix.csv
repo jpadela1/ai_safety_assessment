@@ -1,0 +1,45 @@
+dataset,modality,context,dimension,subdimension,enabled,applicable,na_reason
+diabetes_130,tabular,health,content_safety,harm_content_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+diabetes_130,tabular,health,content_safety,identity_attack_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+diabetes_130,tabular,health,content_safety,severe_toxicity_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+diabetes_130,tabular,health,content_safety,label_integrity,True,True,
+diabetes_130,tabular,health,content_safety,free_text_field_harm,True,False,required input 'text_column' not set on the dataset spec
+diabetes_130,tabular,health,content_safety,representation_imbalance,True,True,
+diabetes_130,tabular,health,physical_safety,physical_harm_enablement,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+diabetes_130,tabular,health,physical_safety,threat_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+diabetes_130,tabular,health,physical_safety,measurement_range_violation,True,True,
+diabetes_130,tabular,health,physical_safety,safety_critical_edge_case_coverage,True,True,
+diabetes_130,tabular,health,physical_safety,outcome_severity_exposure,True,True,
+framingham,tabular,health,content_safety,harm_content_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+framingham,tabular,health,content_safety,identity_attack_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+framingham,tabular,health,content_safety,severe_toxicity_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+framingham,tabular,health,content_safety,label_integrity,True,True,
+framingham,tabular,health,content_safety,free_text_field_harm,True,False,required input 'text_column' not set on the dataset spec
+framingham,tabular,health,content_safety,representation_imbalance,True,True,
+framingham,tabular,health,physical_safety,physical_harm_enablement,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+framingham,tabular,health,physical_safety,threat_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+framingham,tabular,health,physical_safety,measurement_range_violation,True,True,
+framingham,tabular,health,physical_safety,safety_critical_edge_case_coverage,True,True,
+framingham,tabular,health,physical_safety,outcome_severity_exposure,True,True,
+german_credit,tabular,loan_finance,content_safety,harm_content_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+german_credit,tabular,loan_finance,content_safety,identity_attack_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+german_credit,tabular,loan_finance,content_safety,severe_toxicity_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+german_credit,tabular,loan_finance,content_safety,label_integrity,True,True,
+german_credit,tabular,loan_finance,content_safety,free_text_field_harm,True,False,required input 'text_column' not set on the dataset spec
+german_credit,tabular,loan_finance,content_safety,representation_imbalance,True,True,
+german_credit,tabular,loan_finance,physical_safety,physical_harm_enablement,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+german_credit,tabular,loan_finance,physical_safety,threat_density,True,False,modality 'tabular' not in ['text']; required input 'text_column' not set on the dataset spec
+german_credit,tabular,loan_finance,physical_safety,measurement_range_violation,True,False,"context 'loan_finance' not in ['biology', 'chemistry', 'health', 'transportation']; required input 'value_ranges' not set on the dataset spec"
+german_credit,tabular,loan_finance,physical_safety,safety_critical_edge_case_coverage,True,True,
+german_credit,tabular,loan_finance,physical_safety,outcome_severity_exposure,True,False,"context 'loan_finance' not in ['health', 'transportation']"
+civilcomments,text,general,content_safety,harm_content_density,True,True,
+civilcomments,text,general,content_safety,identity_attack_density,True,True,
+civilcomments,text,general,content_safety,severe_toxicity_density,True,True,
+civilcomments,text,general,content_safety,label_integrity,True,False,modality 'text' not in ['tabular']; required input 'label_column' not set on the dataset spec
+civilcomments,text,general,content_safety,free_text_field_harm,True,False,modality 'text' not in ['tabular']
+civilcomments,text,general,content_safety,representation_imbalance,True,False,modality 'text' not in ['tabular']; required input 'sensitive_columns' not set on the dataset spec
+civilcomments,text,general,physical_safety,physical_harm_enablement,True,True,
+civilcomments,text,general,physical_safety,threat_density,True,True,
+civilcomments,text,general,physical_safety,measurement_range_violation,True,False,"modality 'text' not in ['tabular']; context 'general' not in ['biology', 'chemistry', 'health', 'transportation']; required input 'value_ranges' not set on the dataset spec"
+civilcomments,text,general,physical_safety,safety_critical_edge_case_coverage,True,False,"modality 'text' not in ['tabular']; context 'general' not in ['health', 'loan_finance', 'transportation']; required input 'edge_case_strata' not set on the dataset spec"
+civilcomments,text,general,physical_safety,outcome_severity_exposure,True,False,"modality 'text' not in ['tabular']; context 'general' not in ['health', 'transportation']; required input 'label_column' not set on the dataset spec"

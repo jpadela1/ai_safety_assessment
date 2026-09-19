@@ -1,0 +1,5 @@
+dataset,status,detail,rows,path,units
+diabetes_130,built,,101766.0,/content/drive/MyDrive/Colab Notebooks/ai_safety_audit/data/diabetes_130.csv,fraction
+framingham,built,,4240.0,/content/drive/MyDrive/Colab Notebooks/ai_safety_audit/data/framingham.csv,fraction
+german_credit,built,,1000.0,/content/drive/MyDrive/Colab Notebooks/ai_safety_audit/data/german_credit.csv,fraction
+civilcomments,built,,10000.0,/content/drive/MyDrive/Colab Notebooks/ai_safety_audit/data/civilcomments_base.csv,fraction
