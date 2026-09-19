@@ -1,0 +1,3 @@
+arm,pretraining_detector,pretraining_training_data,posttraining_evaluator,posttraining_training_data,shared_weights,shared_training_corpus,injection_ground_truth
+text,detoxify:unbiased,Jigsaw toxic-comment corpora,facebook/roberta-hate-speech-dynabench-r4-target,Dynabench R4 dynamically collected hate speech,False,False,human CivilComments annotation (independent of both)
+tabular,out-of-fold logistic regression / declared specs,the injected TRAIN split only,"clean held-out TEST split (AUC, ECE, Brier, sub-group AUC)",not applicable — labels are ground truth,False,False,the planted dose (known by construction)
