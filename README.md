@@ -1,4 +1,4 @@
-# Pre-Training Risk Assessment: An Application-Conditional Rubric for Data Quality, Safety, and Rights Impact
+# Safety Risk Assessment: An Application-Conditional Rubric for Data Quality, Safety, and Rights Impact
 
 > **Paper status:** under double-blind review at ICTAI 2026.
 > Author block is anonymized in the paper PDF; this repository contains the
