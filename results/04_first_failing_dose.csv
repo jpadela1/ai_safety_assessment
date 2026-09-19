@@ -1,0 +1,14 @@
+dataset,subdimension,risk_level,threshold,first_failing_dose,units
+civilcomments,harm_content_density,medium,0.05,0.1,fraction
+civilcomments,threat_density,medium,0.02,0.05,fraction
+diabetes_130,label_integrity,high,0.05,0.0,fraction
+diabetes_130,measurement_range_violation,high,0.01,0.03,fraction
+diabetes_130,representation_imbalance,high,0.1,0.0,fraction
+diabetes_130,safety_critical_edge_case_coverage,high,0.1,0.0,fraction
+framingham,label_integrity,high,0.05,0.0,fraction
+framingham,measurement_range_violation,high,0.01,0.0,fraction
+framingham,representation_imbalance,high,0.1,0.0,fraction
+framingham,safety_critical_edge_case_coverage,high,0.1,0.0,fraction
+german_credit,label_integrity,medium,0.1,0.0,fraction
+german_credit,representation_imbalance,medium,0.2,0.0,fraction
+german_credit,safety_critical_edge_case_coverage,medium,0.25,,fraction
